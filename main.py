@@ -6,7 +6,7 @@ try:
     filenames = os.listdir(usr)
 
     for filename in filenames:
-        os.rename(os.path.join(usr, filename), os.path.join(usr, filename.replace(' ', '-')))
+        os.rename(os.path.join(usr, filename), os.path.join(usr, filename.replace('.rdf', '.xml')))
     print(f"Successfully renamed file names in {usr}")
 
 except:
